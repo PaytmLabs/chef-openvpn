@@ -30,6 +30,9 @@ end
 # Set this to false if you want to just use the lwrp
 default['openvpn']['configure_default_server'] = true
 
+# Set this to do local CA init use it to generate server key
+default['openvpn']['configure_default_ca'] = true
+
 # whether to use the openvpn-git package (archlinux only)
 default['openvpn']['git_package'] = false
 
