@@ -59,6 +59,8 @@ default['openvpn']['type']            = 'server'
 default['openvpn']['subnet']          = '10.8.0.0'
 default['openvpn']['netmask']         = '255.255.0.0'
 
+default['openvpn']['enable_nat']      = false
+
 # Client specific
 default['openvpn']['gateway']         = "vpn.#{node['domain']}"
 default['openvpn']['client_cn']       = 'client'
